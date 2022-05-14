@@ -7,9 +7,11 @@ import { v4 as uuidv4 } from 'uuid';
 export class UniqueIdService {
   private numberOfGeneratedIds = 0;
 
+  private validId = /ˆ[A-Za-z]+[\w\-\:\.]*$/;
+
   public generateUniqueIdWithPrefix(prefix: string): string {
-    if (!prefix) {
-      throw Error('Prefix can not be empty');
+    if (!prefix || !this.validId.test(prefix)) {
+      throw Error('Prefixo nao pode ser vazio');
     }
     const uniqueId = this.generateUniqueId();
     this.numberOfGeneratedIds++;
