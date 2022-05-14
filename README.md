@@ -31,3 +31,9 @@ Teste de exeções
 Como testes ajudam na refatoração
 Expectativas com contexto
 A diferença entre as funções toBe, ToBeTrue e ToBeTruthy
+
+#
+
+A criar um componente de like
+Tornar o componente acessível
+Integrá-lo na aplicação
