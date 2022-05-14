@@ -22,3 +22,12 @@ Evitando vícios na criação de testes
 https://karma-runner.github.io/latest/index.html
 
 https://jasmine.github.io/
+
+#
+
+A importância de testes precisos, legíveis e fáceis de manter
+O papel da função beforeEach
+Teste de exeções
+Como testes ajudam na refatoração
+Expectativas com contexto
+A diferença entre as funções toBe, ToBeTrue e ToBeTruthy
