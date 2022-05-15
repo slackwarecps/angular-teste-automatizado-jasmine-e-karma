@@ -1,4 +1,4 @@
-import { ComponentFixture, ComponentFixtureAutoDetect, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { LikeWidgetComponent } from './like-widget.component';
 import { LikeWidgetModule } from './like-widget.module';
 
@@ -8,7 +8,7 @@ describe(LikeWidgetComponent.name, () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LikeWidgetModule],
+      imports: [LikeWidgetModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(LikeWidgetComponent);
@@ -33,9 +33,9 @@ describe(LikeWidgetComponent.name, () => {
 
   it(`#${LikeWidgetComponent.prototype.like.name}
     should trigger (@Output liked) when called`, () => {
-    spyOn(component.liked, 'emit');
-    fixture.detectChanges();
-    component.like();
-    expect(component.liked.emit).toHaveBeenCalled();
+      spyOn(component.liked, 'emit');
+      fixture.detectChanges();
+      component.like();
+      expect(component.liked.emit).toHaveBeenCalled();
   });
 });
