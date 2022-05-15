@@ -37,3 +37,13 @@ A diferença entre as funções toBe, ToBeTrue e ToBeTruthy
 A criar um componente de like
 Tornar o componente acessível
 Integrá-lo na aplicação
+
+#
+
+TestBed e criação de módulos de teste
+Abordagens Test First / Test Later
+Fixture de componentes
+Teste de input e output properties
+Asserções assíncronas
+Introdução ao uso do Spy
+Padronização na descrição de testes
