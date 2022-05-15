@@ -47,3 +47,15 @@ Teste de input e output properties
 Asserções assíncronas
 Introdução ao uso do Spy
 Padronização na descrição de testes
+
+## instalar o karma Firfox launcher
+
+npm install -D karma-firefox-launcher@1.3.0
+
+depois adicionar o plugin no karma.config
+
+require('karma-firefox-launcher'),
+
+depois ativar o browser tambem no arquivo karma
+
+    browsers: ['Chrome','Firefox'],
